@@ -1,0 +1,124 @@
+/* Estilo da seção de Suporte */
+.secao-suporte {
+    padding: 80px 20px;
+    background-color: var(--Cor-Branca); /* Cor de fundo */
+    text-align: center; /* Centraliza o conteúdo */
+}
+
+.container-suporte {
+    max-width: 1200px; /* Largura máxima do contêiner */
+    margin: 0 auto; /* Centraliza o contêiner na página */
+    display: flex;
+    align-items: center; /* Alinha os itens verticalmente */
+    gap: 40px; /* Espaçamento entre texto e imagem */
+}
+
+.texto-suporte {
+    flex: 1; /* Ocupa o espaço disponível */
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+.titulo-suporte {
+    font-family: var(--Fonte-Logo);
+    font-size: 36px; /* Tamanho da fonte */
+    color: var(--Cor-Terciaria); /* Cor do texto */
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+}
+
+.descricao-suporte {
+    font-family: var(--Fonte-Logo);
+    font-size: var(--Tamanho-Fonte-Quaternaria); /* Tamanho da fonte */
+    color: var(--Cor-Terciaria); /* Cor do texto */
+    line-height: 1.8; /* Espaçamento entre linhas */
+    margin-bottom: 20px; /* Espaçamento abaixo do parágrafo */
+}
+
+.botao-suporte {
+    display: inline-block; /* Faz o botão ocupar apenas o espaço necessário */
+    background-color: var(--Cor-Secundaria); /* Cor de fundo do botão */
+    color: var(--Cor-Branca); /* Cor do texto */
+    font-size: var(--Tamanho-Fonte-Quaternaria); /* Tamanho da fonte */
+    font-family: var(--Fonte-Logo);
+    padding: 20px 20px; /* Espaçamento interno */
+    border-radius: var(--Radius-Principal); /* Bordas arredondadas */
+    text-decoration: none; /* Remove o sublinhado do link */
+    transition: background-color 0.3s ease; /* Transição suave */
+}
+
+.botao-suporte:hover {
+    background-color: var(--Cor-Terciaria); /* Cor ao passar o mouse */
+}
+
+.imagem-suporte {
+    flex: 1; /* Ocupa o espaço disponível */
+    max-width: 500px; /* Largura máxima da imagem */
+}
+
+.imagem-suporte img {
+    width: 100%; /* Faz a imagem ocupar 100% do contêiner */
+    border-radius: var(--Radius-Principal); /* Bordas arredondadas */
+}
+
+/* responsivo */
+
+/* 📱 Mobile (até 768px) */
+@media (max-width: 768px) {
+    .container-suporte {
+        display: block; /* Alinha os itens em uma única linha */
+        text-align: center; /* Centraliza o conteúdo */
+    }
+
+    .titulo-suporte {
+        font-size: 28px; /* Tamanho da fonte ajustado para mobile */
+        margin-bottom: 15px;
+    }
+
+    .texto-suporte {
+        font-size: 14px; /* Ajuste de fonte para o texto */
+    }
+
+    .descricao-suporte {
+        font-size: 14px; /* Ajuste de fonte para a descrição */
+        padding: 10px;
+    }
+
+    .imagem-suporte {
+        max-width: 80%; /* Ajusta a largura da imagem */
+        margin-top: 20px; /* Adiciona espaçamento entre o texto e a imagem */
+    }
+
+    .botao-suporte {
+        padding: 15px 20px; /* Ajuste no padding do botão */
+    }
+}
+
+/* 📟 Tablet (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container-suporte {
+        display: block; /* Alinha os itens em uma única linha */
+        text-align: center; /* Centraliza o conteúdo */
+    }
+
+    .titulo-suporte {
+        font-size: 32px; /* Tamanho da fonte ajustado para tablet */
+        margin-bottom: 15px;
+    }
+
+    .texto-suporte {
+        font-size: 16px; /* Ajuste de fonte para o texto */
+    }
+
+    .descricao-suporte {
+        font-size: 16px; /* Ajuste de fonte para a descrição */
+        padding: 15px;
+    }
+
+    .imagem-suporte {
+        max-width: 85%; /* Ajusta a largura da imagem */
+        margin-top: 20px; /* Adiciona espaçamento entre o texto e a imagem */
+    }
+
+    .botao-suporte {
+        padding: 18px 20px; /* Ajuste no padding do botão */
+    }
+}

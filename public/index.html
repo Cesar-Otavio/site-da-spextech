@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/imagens/icones/logo-spextech-branco.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>SpexTech</title>
+</head>
+    <body>
+        <!-- Cabeçalho do site -->
+        <Header id="header" >
+            <!-- Menu de navegação hamburguer -->
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            
+            <div class="dv_img_logo"> 
+                <img class="img_logo" src="assets/imagens/logo-spextech-branco.png" alt="Logo da SpexTech">
+                <p class="paragrafo_logo">pexTech</p>
+            </div>
+                
+            <nav class="nv_navegacao">
+                <ul class="ul_lista_navegacao">
+                    <li class="lista_navegacao"><a class="link_navegacao" href="index.html">Home</a></li>
+                    <li class="lista_navegacao"><a class="link_navegacao" href="#sobre-nos">Sobre Nós</a></li>
+                    <li class="lista_navegacao"><a class="link_navegacao" href="#produtos">Produtos</a></li>
+                    <li class="lista_navegacao"><a class="link_navegacao" href="#suporte">Suporte</a></li>
+                </ul>
+            </nav>
+        </Header>
+        <!-- ---------------------- -->
+    
+        <main>
+            <!-- Seção frase chamativa-->
+            <section >
+                <h1 class="frase_chamativa fade-in">Transforme suas ideias em <br>realidade com agilidade e segurança!</h1>
+                <h4 class="frase_chamativa_segunda fade-in">Na <span class="span_spextech"><i>SpexTech</i></span>, desenvolvemos software sob demanda com a 
+                    precisão que você precisa <br>e a velocidade que o mercado exige.
+                </h4>
+                <div class="container-botao fade-in">
+                    <a href="https://wa.me/16997973122?text=Olá!%20Gostaria%20de%20mais%20informações%20sobre%20a%20Solução%20Sob%20Medida." class="botao-whatsapp" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Fale Conosco
+                    </a>
+                </div>
+                <div class="container-imagem fade-in">
+                    <img src="assets/imagens/imagem-de-fundo-ilustracao-2.png" alt="Imagem ilustrativa" class="imagem-centralizada">
+                </div>
+            </section>
+            <!-- ---------------------- -->
+
+            <!-- Seção dos Cards -->
+            <section class="secao-cards fade-in">
+                <h2 class="titulo-recursos">Recursos e Tecnologias Projetados para você: </h2>
+                <div class="container-cards fade-in">
+                    <!-- Primeira Linha: 3 Cards -->
+                    <div class="card">
+                        <i class="icone-card"><img src="assets/imagens/solucao-azul.png" alt="Imagem de solução" class="icone-card"></i>
+                        <h3 class="titulo-card">Soluções Rápidas</h3>
+                        <p class="descricao-card">Desenvolvemos soluções ágeis para atender às suas necessidades no menor tempo possível.</p>
+                    </div>
+
+                    <div class="card">
+                        <i class="icone-card"><img src="assets/imagens/responsivo-azul.png" alt="Imagem de design responsivo" class="icone-card"></i>
+                        <h3 class="titulo-card">Design Responsivo</h3>
+                        <p class="descricao-card">Criamos designs que se adaptam perfeitamente a qualquer dispositivo, garantindo a melhor experiência do usuário.</p>
+                    </div>
+
+                    <div class="card">
+                        <i class="icone-card"><img src="assets/imagens/suporte-azul.png" alt="Imagem de suporte" class="icone-card"></i>
+                        <h3 class="titulo-card">Suporte 24 Horas</h3>
+                        <p class="descricao-card">Nossa equipe está disponível 24 horas por dia para resolver qualquer problema que você possa ter.</p>
+                    </div>
+                </div>
+
+                <!-- Segunda Linha: 4 Cards -->
+                <div class="container-cards fade-in">
+                    <div class="card">
+                        <i class="icone-card"><img src="assets/imagens/csharp-azul-1.png" alt="Ícone C#" class="icone-card"></i>
+                        <h3 class="titulo-card">C# Windows Forms</h3>
+                        <p class="descricao-card">Desenvolvimento de aplicações desktop robustas e eficientes com C# e Windows Forms.</p>
+                    </div>
+
+                    <div class="card">
+                        <i class="icone-card"><img src="assets/imagens/api-azul.png" alt="Ícone API" class="icone-card"></i>
+                        <h3 class="titulo-card">Bibliotecas, APIs, Recursos</h3>
+                        <p class="descricao-card">Utilizamos bibliotecas e APIs personalizadas para atender às necessidades específicas do seu projeto.</p>
+                    </div>
+
+                    <div class="card">
+                        <i class="icone-card"><img src="assets/imagens/armazenamento-nuvem-azul.png" alt="Ícone Nuvem" class="icone-card"></i>
+                        <h3 class="titulo-card">Salvo na Nuvem</h3>
+                        <p class="descricao-card">Seus dados seguros e acessíveis de qualquer lugar, com armazenamento em nuvem confiável.</p>
+                    </div>
+
+                    <div class="card">
+                        <i class="icone-card"><img src="assets/imagens/mysql-azul.png" alt="Ícone MySQL" class="icone-card"></i>
+                        <h3 class="titulo-card">MySQL</h3>
+                        <p class="descricao-card">Banco de dados seguro e escalável para gerenciar suas informações com eficiência.</p>
+                    </div>
+                </div>
+
+                <!-- Terceira Linha: 3 Cards -->
+                <div class="container-cards fade-in">
+                    <div class="card">
+                        <i class="icone-card"><img src="assets/imagens/figma-azul.png" alt="Ícone Design" class="icone-card"></i>
+                        <h3 class="titulo-card">Figma, Canva</h3>
+                        <p class="descricao-card">Designs modernos e interfaces intuitivas criadas com as melhores ferramentas do mercado.</p>
+                    </div>
+
+                    <div class="card">
+                        <i class="icone-card"><img src="assets/imagens/design-ui-ux-azul.png" alt="Ícone UI/UX" class="icone-card"></i>
+                        <h3 class="titulo-card">UI/UX Moderno</h3>
+                        <p class="descricao-card">Interfaces focadas na experiência do usuário, combinando beleza e funcionalidade.</p>
+                    </div>
+
+                    <div class="card">
+                        <i class="icone-card"><img src="assets/imagens/protecao-azul.png" alt="Ícone Segurança" class="icone-card"></i>
+                        <h3 class="titulo-card">Proteção</h3>
+                        <p class="descricao-card">Implementamos as melhores práticas de segurança para proteger seus dados e sistemas.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Seção Sobre Nós -->
+            <section class="secao-sobre fade-in" id="sobre-nos">
+                <div class="container-sobre">
+                    <h2 class="titulo-sobre">Quem Somos?</h2>
+                    <div class="conteudo-sobre">
+                        <div class="texto-sobre">
+                            <p>
+                                Na <strong>SpexTech</strong>, somos apaixonados por tecnologia e inovação. Especializados em <strong>desenvolvimento de soluções personalizadas</strong>, ajudamos <strong>startups</strong> e <strong>pequenas empresas</strong> a transformar suas ideias em realidade digital. Com um time de profissionais altamente qualificados e experientes, criamos sistemas, aplicativos e plataformas que impulsionam negócios, simplificam processos e entregam resultados reais.
+                            </p>
+                            <p>
+                                Nosso diferencial está na <strong>agilidade</strong> e na <strong>segurança</strong>. Utilizamos metodologias ágeis para entregar projetos dentro do prazo, sem abrir mão da qualidade. Além disso, priorizamos a proteção dos dados dos nossos clientes, implementando as melhores práticas de cibersegurança em todas as etapas do desenvolvimento.
+                            </p>
+                            <p>
+                                Acreditamos que cada negócio é único, por isso oferecemos <strong>soluções sob medida</strong>, escaláveis e eficientes, que se adaptam às necessidades específicas de cada cliente. Seja para automatizar processos, melhorar a experiência do usuário ou expandir operações, estamos aqui para ajudar você a alcançar seus objetivos de forma <strong>rápida e confiável</strong>.
+                            </p>
+                            <p>
+                                Na <strong>SpexTech</strong>, seu projeto ganha vida com <strong>inovação, agilidade e segurança</strong>. Somos mais do que uma empresa de tecnologia; somos <strong>parceiros no seu sucesso</strong>.
+                            </p>
+                        </div>
+                        <div class="imagem-sobre fade-in">
+                            <img src="assets/imagens/trabalho-em-equipe-2.png" alt="Equipe da SpexTech">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ---------------------- -->
+
+            <!-- Seção de Produtos -->
+            <section class="secao-produtos fade-in" id="produtos">
+                <h2 class="titulo-produtos fade-in">Nossos Softwares Aprovados</h2>
+
+                <!-- Primeiro Software: Gerenciamento de Pacientes -->
+                <div class="container-software fade-in">
+                    <h2 class="titulo-software fade-in">Gerenciamento de Pacientes:</h2>
+                    <div class="slider fade-in">
+                        <div class="slides fade-in">
+                            <input type="radio" name="radio-btn" id="radio1">
+                            <input type="radio" name="radio-btn" id="radio2">
+                            <input type="radio" name="radio-btn" id="radio3">
+                            <input type="radio" name="radio-btn" id="radio4">
+                            <div class="slide first fade-in">
+                                <img src="assets/imagens/tela-de-login-AF.jpg" alt="Produto 1">
+                            </div>
+                            <div class="slide">
+                                <img src="assets/imagens/tela-de-config-AF.png" alt="Produto 2">
+                            </div>
+                            <div class="slide">
+                                <img src="assets/imagens/ficha-do-paciente-AF.jpg" alt="Produto 3">
+                            </div>
+                            <div class="slide">
+                                <img src="assets/imagens/tela-de-pacientes-AF.png" alt="Produto 4">
+                            </div>
+                        </div>
+                        <!-- Navegação automática (opcional) -->
+                        <div class="navegacao-auto">
+                            <div class="auto-btn1"></div>
+                            <div class="auto-btn2"></div>
+                            <div class="auto-btn3"></div>
+                            <div class="auto-btn4"></div>
+                        </div>
+
+                        <!-- Navegação manual (bolinhas) -->
+                        <div class="navegacao-manual">
+                            <label for="radio1" class="manual-btn"></label>
+                            <label for="radio2" class="manual-btn"></label>
+                            <label for="radio3" class="manual-btn"></label>
+                            <label for="radio4" class="manual-btn"></label>
+                        </div>
+                    </div>
+
+                    <!-- Descrição do software -->
+                    <div class="descricao-software fade-in">
+                        <p><strong>Software de Gestão para Clínicas – Cadastro e Controle de Pacientes:</strong>
+                            Desenvolvido para facilitar a rotina de clínicas e profissionais da saúde, o nosso software oferece uma solução completa para o gerenciamento de pacientes. Criado especialmente para uma fisioterapeuta, ele otimiza o atendimento e melhora a organização dos cadastros, consultas e relatórios.</p>
+                    </div>
+                </div>
+
+                <!-- Segundo Software: Gerenciamento de Orçamento -->
+                <div class="container-software fade-in">
+                    <h2 class="titulo-software fade-in">Gerenciamento de Orçamento:</h2>
+                    <div class="slider fade-in">
+                        <div class="slides fade-in">
+                            <input type="radio" name="radio-btn" id="radio5">
+                            <input type="radio" name="radio-btn" id="radio6">
+                            <input type="radio" name="radio-btn" id="radio7">
+                            <input type="radio" name="radio-btn" id="radio8">
+                            <div class="slide first">
+                                <img src="assets/imagens/calhas-orçamento.png" alt="Produto 1">
+                            </div>
+                            <div class="slide">
+                                <img src="assets/imagens/calhas-orçamento.png" alt="Produto 2">
+                            </div>
+                            <div class="slide">
+                                <img src="assets/imagens/calhas-orçamento.png" alt="Produto 3">
+                            </div>
+                            <div class="slide">
+                                <img src="assets/imagens/calhas-orçamento.png" alt="Produto 4">
+                            </div>
+                        </div>
+                        <!-- Navegação automática (opcional) -->
+                        <div class="navegacao-auto">
+                            <div class="auto-btn5"></div>
+                            <div class="auto-btn6"></div>
+                            <div class="auto-btn7"></div>
+                            <div class="auto-btn8"></div>
+                        </div>
+
+                        <!-- Navegação manual (bolinhas) -->
+                        <div class="navegacao-manual">
+                            <label for="radio5" class="manual-btn"></label>
+                            <label for="radio6" class="manual-btn"></label>
+                            <label for="radio7" class="manual-btn"></label>
+                            <label for="radio8" class="manual-btn"></label>
+                        </div>
+                    </div>
+
+                    <!-- Descrição do software -->
+                    <div class="descricao-software fade-in">
+                        <p><strong>Software de Orçamento para Calhas – Automação e Precisão no Atendimento:</strong>
+                            Nosso software foi desenvolvido para facilitar o dia a dia de empresas e profissionais que trabalham com instalação e manutenção de calhas, oferecendo um sistema completo para criação e gerenciamento de orçamentos. Com uma interface intuitiva e funcionalidades avançadas, ele garante maior agilidade, precisão e controle sobre os serviços prestados.</p>
+                    </div>
+                </div>
+            </section>
+            <!-- ---------------------- -->
+
+            <!-- Seção de Suporte 24 Horas -->
+            <section class="secao-suporte fade-in id" id="suporte">
+                <div class="container-suporte fade-in">
+                    <div class="texto-suporte fade-in">
+                        <h2 class="titulo-suporte fade-in">Suporte 24 Horas</h2>
+                        <p class="descricao-suporte fade-in">
+                            Na <strong>SpexTech</strong>, oferecemos suporte técnico especializado 24 horas por dia, 7 dias por semana. Nossa equipe está sempre pronta para ajudar você a resolver qualquer problema, garantir a segurança dos seus sistemas e manter sua operação funcionando sem interrupções.
+                        </p>
+                        <p class="descricao-suporte fade-in">
+                            Seja para dúvidas, manutenção ou emergências, conte conosco para fornecer soluções rápidas e eficientes. Sua tranquilidade é a nossa prioridade!
+                        </p>
+                        <a href="https://wa.me/16997973122?text=Olá!%20Gostaria%20de%20mais%20informações%20sobre%20a%20Solução%20Sob%20Medida." class="botao-suporte fade-in">Entre em Contato</a>
+                    </div>
+                    <div class="imagem-suporte fade-in">
+                        <img src="assets/imagens/suporte-imagem.png" alt="Suporte 24 Horas">
+                    </div>
+                </div>
+            </section>
+            <!-- ---------------------- -->
+        </main>
+        <!-- ---------------------- -->
+
+        <!-- Rodapé -->
+        <footer class="rodape fade-in">
+            <div class="container-rodape fade-in">
+                <!-- Logo da empresa -->
+                <div class="logo-rodape">
+                    <img src="assets/imagens/logo-spextech-branco.png" alt="Logo SpexTech">
+                    <p class="paragrafo_logo paragrafo_logo_rodape">pexTech</p>
+                </div>
+
+                <!-- Conteúdo do rodapé -->
+                <div class="conteudo-rodape">
+                    <!-- Coluna 1: Conteúdo -->
+                    <div class="coluna-rodape">
+                        <h3 class="titulo-coluna">Conteúdo</h3>
+                        <ul class="lista-rodape">
+                            <li><a href="#">Autores</a></li>
+                            <li><a href="https://www.flaticon.com/br/autores">Ícones</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Coluna 2: Ferramentas -->
+                    <div class="coluna-rodape">
+                        <h3 class="titulo-coluna">Ferramentas</h3>
+                        <ul class="lista-rodape">
+                            <li><a href="https://code.visualstudio.com/">Visual Studio Code</a></li>
+                            <li><a href="https://images.google.com.br/">Google Imagens</a></li>
+                            <li><a href="https://getbootstrap.com/">Bootstrap</a></li>
+                            <li><a href="https://www.flaticon.com/br/">Flaticon</a></li>
+                            <li><a href="https://help.figma.com/hc/pt-br/articles/14563969806359-O-que-%C3%A9-o-Figma">Figma</a></li>
+                            <li><a href="https://www.canva.com/">Canva</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Coluna 3: Ajuda -->
+                    <div class="coluna-rodape">
+                        <h3 class="titulo-coluna">Ajuda</h3>
+                        <ul class="lista-rodape">
+                            <li><a href="#">Suporte</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Coluna 4: Empresa -->
+                    <div class="coluna-rodape">
+                        <h3 class="titulo-coluna">Empresa</h3>
+                        <ul class="lista-rodape">
+                            <li><a href="#sobre-nos">Sobre</a></li>
+                            <li><a href="https://wa.me/16997973122?text=Olá!%20Gostaria%20de%20mais%20informações%20sobre%20a%20Solução%20Sob%20Medida.">Contate-nos</a></li>
+                            <li><a href="#">Nossa licença</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Coluna 5: Mídia Social -->
+                    <div class="coluna-rodape">
+                        <h3 class="titulo-coluna">Mídia Social</h3>
+                        <ul class="lista-rodape">
+                            <li><a href="https://wa.me/16997973122?text=Olá!%20Gostaria%20de%20mais%20informações%20sobre%20a%20Solução%20Sob%20Medida."><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Rodapé inferior -->
+            <div class="rodape-inferior">
+                <div class="container-rodape-inferior">
+                    <p class="texto-rodape-inferior">
+                        <a href="#">Termos e condições</a> | 
+                        <a href="#">Política de privacidade</a> | 
+                        <a href="#">Política de cookies</a> | 
+                        <a href="#">Notificação de Direitos Autorais</a>
+                    </p>
+                    <p class="texto-rodape-inferior">
+                        Copyright © 2025-2025 SpexTech. Todos os direitos reservados.
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <!-- ---------------------- -->
+
+        <!-- Botão do whatsapp flutuante -->
+        <a href="https://wa.me/16997973122?text=Olá!%20Gostaria%20de%20mais%20informações%20sobre%20a%20Solução%20Sob%20Medida." class="whatsapp-float" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <!-- ---------------------- -->
+
+        <!-- Botão de voltar ao topo -->
+        <button id="btn-topo" class="hidden">↑ Topo</button>
+        <!-- ---------------------- -->
+
+        <!-- Chatbot -->
+        <div class="chat-bubble fade-in" onclick="toggleChat()">
+            <img src="assets/imagens/boltz-icone.png" alt="icone do boltz">
+            <div id="notification" class="notification-bubble" style="display: none;">!</div>
+          </div>
+          
+          <div class="chat-container fade-in" id="chatBox">
+            <div class="chat-header">Chat com Boltz</div>
+            <div class="chat-body" id="chatBody">
+              <p><strong>Boltz:</strong> Olá! Como posso ajudar?</p>
+            </div>
+            <div class="chat-footer">
+              <input type="text" id="userInput" placeholder="Digite sua mensagem...">
+              <button onclick="sendMessage()">Enviar</button>
+            </div>
+        </div>
+
+        <!-- Scripts -->
+        <script src="js/modules/utils.js"></script>
+        <script src="bot/boltz.js"></script>
+        <!-- ---------------------- -->
+    </body>
+</html>

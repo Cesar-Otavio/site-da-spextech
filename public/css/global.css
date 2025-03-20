@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=League+Spartan:wght@100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('section-css/cabecalho.css');
+@import url('section-css/section-frase.css');
+@import url('section-css/section-cards.css');
+@import url('section-css/whatsapp-flutuante.css');
+@import url('section-css/section-sobre-nos.css');
+@import url('section-css/section-produtos.css');
+@import url('section-css/section-suporte.css');
+@import url('section-css/rodape.css');
+@import url('../bot/bot-css/boltz.css');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth; /* Faz o scroll suave */
+}
+
+:root{
+    --Fonte-Principal: 'league spartan', sans-serif;
+    --Fonte-Secundaria: 'sans-serif';
+    --Fonte-Terciaria: ;
+    --Fonte-Logo: 'league spartan', sans-serif;
+    --Cor-Primaria: #2D3E4E;
+    --Cor-Secundaria: #94beee;
+    --Cor-Terciaria: #3F5265;
+    --Cor-Quaternaria: #1A2936;
+    --Cor-Quinaria: #0F171F;
+    --Cor-Branca: white;
+    --Cor-Preto: black;
+    --Tamanho-Fonte-Principal: 20px;
+    --Tamanho-Fonte-Secundaria: 25px;
+    --Tamanho-Fonte-Terciaria: 34px;
+    --Tamanho-Fonte-Quaternaria: 22px;
+    --Radius-Principal: 10px;
+    --Radius-Secundario: 15px;
+    --Radius-Terciario: 5px;
+}

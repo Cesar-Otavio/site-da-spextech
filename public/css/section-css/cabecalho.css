@@ -1,0 +1,151 @@
+/* Estilos do cabeçalho de navegação */
+.dv_img_logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 10%; /* Menos espaçamento à esquerda */
+}
+
+/* Estilos da logo */
+.img_logo {
+    height: 50px; /* Altura da imagem */
+    width: auto; /* Largura da imagem */
+}
+
+/* Estilos do parágrafo */
+.paragrafo_logo {
+    font-family: var(--Fonte-Logo); /* Fonte do texto */
+    font-size: var(--Tamanho-Fonte-Principal); /* Tamanho da fonte */
+    font-weight: bold; /* Peso da fonte */
+    color: #ffffff; /* Cor do texto */
+    margin: 10px 0 0 -13px; /* Espaçamento do texto */
+    user-select: none; /* Impede a seleção do texto */
+}
+
+/* Estilos da Navegação */
+.nv_navegacao {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center; /* Centraliza os itens */
+    margin-left: 0; /* Removendo margem negativa */
+}
+
+.ul_lista_navegacao {
+    display: flex;
+    justify-content: center; /* Centraliza os links */
+    list-style: none;
+    padding: 0; /* Garante que não há espaçamento extra */
+}
+
+.lista_navegacao {
+    position: relative;
+    margin: 0 40px; /* Ajusta espaçamento lateral */
+}
+
+/* Pseudo-elemento para o traço */
+.lista_navegacao::after {
+    content: ''; /* Cria o pseudo-elemento */
+    position: absolute;
+    left: 0; /* Começa da esquerda */
+    bottom: -5px; /* Posiciona abaixo do texto */
+    width: 0; /* Largura inicial do traço */
+    height: 2px; /* Altura do traço */
+    background-color: #94beee; /* Cor do traço */
+    transition: width 0.3s ease; /* Animação suave */
+}
+
+/* Efeito ao passar o mouse */
+.lista_navegacao:hover::after {
+    width: 100%; /* Expande o traço para a direita */
+}
+
+
+.link_navegacao {
+    color: rgb(255, 255, 255); /* Cor do texto */
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    font-size: var(--Tamanho-Fonte-Secundaria); /* Tamanho da fonte */
+    transition: color 0.3s ease; /* Efeito de transição suave na cor */
+    font-family: var(--Fonte-Logo); /* Fonte do texto */
+}
+
+.link_navegacao:hover {
+    color: var(--Cor-Secundaria); /* Cor do texto ao passar o mouse */
+}
+
+/* Menu Hamburguer */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    position: absolute;
+    left: 20px; /* Posicionado no canto esquerdo */
+    top: 20px;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+/* Responsivo */
+
+/* Estilos para mobile (max-width: 768px) */
+@media (max-width: 740px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nv_navegacao {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: -250px; /* Começa escondido */
+        width: 250px;
+        height: 100%;
+        background-color: var(--Cor-Primaria);
+        padding-top: 60px;
+        transition: left 0.3s ease-in-out;
+    }
+
+    .nv_navegacao.active {
+        left: 0; /* Desliza para a direita quando ativo */
+    }
+
+    .ul_lista_navegacao {
+        flex-direction: column;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .lista_navegacao {
+        margin: 20px 0;
+        text-align: center;
+    }
+}
+
+/* 📟 Tablet (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .dv_img_logo {
+        margin-left: 5%;
+    }
+
+    .ul_lista_navegacao {
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .lista_navegacao {
+        font-size: 20px; /* Ajuste no tamanho da fonte */
+    }
+
+    .link_navegacao {
+        font-size: 18px; /* Ajuste no tamanho da fonte */
+    }
+}
+
+/* Estilos para monitor (min-width: 1025px) */

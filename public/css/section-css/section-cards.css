@@ -1,0 +1,125 @@
+.secao-recursos {
+    padding: 80px 20px;
+    background-color: var(--Cor-Branca); /* Cor de fundo */
+    text-align: center; /* Centraliza o conteúdo */
+}
+
+.titulo-recursos {
+    font-family: var(--Fonte-Logo);
+    font-size: 36px; /* Tamanho da fonte */
+    color: var(--Cor-Terciaria); /* Cor do texto */
+    margin-bottom: 40px; /* Espaçamento abaixo do título */
+}
+
+.container-recursos {
+    max-width: 1200px; /* Largura máxima do contêiner */
+    margin: 0 auto; /* Centraliza o contêiner na página */
+}
+
+/* Estilo da seção dos cards */
+.secao-cards {
+    padding: 80px 20px; /* Espaçamento interno */
+    background-color: var(--Cor-Branca); /* Cor de fundo */
+    text-align: center; /* Centraliza o conteúdo */
+}
+
+/* Estilo do contêiner dos cards */
+.container-cards {
+    display: flex;
+    justify-content: center; /* Centraliza os cards horizontalmente */
+    flex-wrap: wrap; /* Permite que os cards quebrem para a próxima linha */
+    gap: 10px; /* Espaçamento entre os cards */
+    max-width: 1200px; /* Largura máxima do contêiner */
+    margin: 0 auto; /* Centraliza o contêiner na página */
+}
+
+/* Estilo de cada card */
+.card {
+    padding: 30px; /* Espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    width: calc(25% - 10px); /* Largura do card (25% do contêiner, menos o gap) */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave */
+    box-sizing: border-box; /* Garante que o padding não aumente a largura */
+}
+
+/* Efeito ao passar o mouse */
+.card:hover {
+    transform: translateY(-10px); /* Levanta o card */
+}
+
+/* Estilo do ícone */
+.icone-card {
+    width: 18%;
+    margin-bottom: 20px; /* Espaçamento abaixo do ícone */
+}
+
+/* Estilo do título */
+.titulo-card {
+    font-family: var(--Fonte-Logo);
+    font-size: var(--Tamanho-Fonte-Terciaria); /* Tamanho da fonte */
+    color: var(--Cor-Terciaria); /* Cor do texto */
+    margin-bottom: 15px; /* Espaçamento abaixo do título */
+}
+
+/* Estilo da descrição */
+.descricao-card {
+    font-family: var(--Fonte-Logo);
+    font-size: 20px; /* Tamanho da fonte */
+    color: var(--Cor-Terciaria); /* Cor do texto */
+    line-height: 1.6; /* Espaçamento entre linhas */
+}
+
+/* responsivo */
+
+/* 📱 Mobile (até 768px) */
+@media (max-width: 768px) {
+    .container-cards {
+        flex-direction: column; /* Cards um abaixo do outro */
+        align-items: center;
+        gap: 20px; /* Mais espaçamento entre os cards */
+    }
+
+    .card {
+        width: 90%; /* Ocupa quase toda a largura */
+        padding: 20px;
+    }
+
+    .titulo-recursos {
+        font-size: clamp(1.5rem, 5vw, 2.2rem); /* Ajuste dinâmico */
+    }
+
+    .titulo-card {
+        font-size: clamp(1.2rem, 4vw, 1.8rem);
+    }
+
+    .descricao-card {
+        font-size: clamp(1rem, 3.5vw, 1.5rem);
+    }
+}
+
+/* 📟 Tablet (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container-cards {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .card {
+        width: calc(50% - 20px); /* Dois cards por linha */
+        padding: 25px;
+    }
+
+    .titulo-recursos {
+        font-size: clamp(2rem, 4vw, 3rem);
+    }
+
+    .titulo-card {
+        font-size: clamp(1.5rem, 3.5vw, 2rem);
+    }
+
+    .descricao-card {
+        font-size: clamp(1.2rem, 3vw, 1.6rem);
+    }
+}
+

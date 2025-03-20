@@ -1,0 +1,122 @@
+
+.chat-container {
+            position: fixed;
+            bottom: 160px;
+            right: 20px;
+            width: 300px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            display: none;
+            flex-direction: column;
+            overflow: hidden;
+            z-index: 1;
+}
+        
+.chat-header {
+            background: #007bff;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-size: 16px;
+}
+        
+.chat-body {
+            padding: 10px;
+            height: 200px;
+            overflow-y: auto;
+}
+        
+.chat-footer {
+            display: flex;
+            padding: 10px;
+            border-top: 1px solid #ddd;
+}
+        
+.chat-footer input {
+            flex: 1;
+            padding: 5px;
+}
+        
+.chat-footer button {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+}
+
+/* Estilo da bolinha de notificação */
+
+.notification-bubble {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  z-index: 2; 
+}
+  
+  /* Ajuste no posicionamento do chat-bubble para acomodar a notificação */
+
+  .chat-bubble {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background: #324b66;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    animation: bounce 2s ease-in-out;
+  }
+  
+  .chat-bubble:hover {
+    background: #3b6592;
+    scale: 1.1;
+    transition: 0.5s;
+  }
+  
+  .chat-bubble img {
+  width: 60%;
+  height: 60%;
+}
+
+@keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-20px);
+            }
+            60% {
+                transform: translateY(-10px);
+            }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.chat-bubble.float {
+  animation: float 1s ease-in-out infinite;
+}

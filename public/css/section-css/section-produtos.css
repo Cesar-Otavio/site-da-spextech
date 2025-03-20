@@ -1,0 +1,260 @@
+/* Estilo da seção de Produtos */
+.secao-produtos {
+    padding: 50px 20px;
+    background-color: var(--Cor-Branca);
+    text-align: center;
+}
+
+.titulo-produtos {
+    font-family: var(--Fonte-Logo);
+    font-size: var(--Tamanho-Fonte-Terciaria);
+    color: var(--Cor-Terciaria);
+    margin-bottom: 70px;
+}
+
+
+/* Contêiner para cada software */
+.container-software {
+    max-width: 1200px; /* Largura máxima */
+    margin: 0 auto; /* Centraliza o contêiner */
+    text-align: center; /* Centraliza o conteúdo */
+    margin-bottom: 60px; /* Espaçamento entre os softwares */
+}
+
+/* Título do software */
+.titulo-software {
+    font-family: var(--Fonte-Logo);
+    font-size: var(--Tamanho-Fonte-Quaternaria);
+    color: var(--Cor-Terciaria);
+    margin-bottom: 20px;
+}
+
+
+/* Estilo para o software à esquerda */
+.software-esquerda {
+    flex: 1;
+    margin-right: 20px;
+}
+
+/* Estilo para o software à direita */
+.software-direita {
+    flex: 1;
+    margin-left: 20px;
+}
+
+/* Estilo da descrição */
+.descricao-software {
+    max-width: 800px; /* Largura máxima da descrição */
+    margin: 20px auto 0; /* Centraliza a descrição */
+    padding: 20px;
+    font-family: var(--Fonte-Logo);
+    font-size:var(--Tamanho-Fonte-Quaternaria);
+    color: var(--Cor-Terciaria);
+    line-height: 1.6;
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+/* Estilo do carrossel */
+.slider {
+    width: 100%;
+    max-width: 800px; /* Largura máxima do carrossel */
+    margin: 0 auto; /* Centraliza o carrossel */
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra leve */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+.slides {
+    display: flex;
+    width: 400%;
+    height: 100%;
+    transition: margin-left 0.5s ease-in-out;
+}
+
+.slide {
+    width: 25%;
+    position: relative;
+}
+
+.slide img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Remove espaços indesejados abaixo da imagem */
+}
+
+.slides input{
+    display: none;
+}
+
+/* Estilo da navegação manual (bolinhas) */
+.navegacao-manual {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 10px; /* Posiciona as bolinhas próximo ao bottom */
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.manual-btn {
+    border: 2px solid #94beee;
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: transparent;
+    margin: 0 5px;
+}
+
+
+.manual-btn:not(:last-child){
+    margin-right: 20px;
+}
+
+.manual-btn:hover {
+    background-color: #94beee;
+}
+
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -75%;
+}
+
+/*--- || ---*/
+
+#radio5:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio6:checked ~ .first{
+    margin-left: -25%;
+}
+
+#radio7:checked ~ .first{
+    margin-left: -50%;
+}
+
+#radio8:checked ~ .first{
+    margin-left: -75%;
+}
+
+.navegacao-auto div {
+    border: 2px solid #94beee;
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0 5px;
+}
+
+/* Estilo para os botões de navegação automática (opcional) */
+.navegacao-auto {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 410px; /* Ajuste conforme necessário */
+}
+
+
+.navegacao-auto div:not(:last-child){
+    margin-right: 20px;
+}
+
+/* Estilo para os botões de navegação automática quando ativos */
+#radio1:checked ~ .navegacao-auto .auto-btn1,
+#radio2:checked ~ .navegacao-auto .auto-btn2,
+#radio3:checked ~ .navegacao-auto .auto-btn3,
+#radio4:checked ~ .navegacao-auto .auto-btn4 {
+    background: #94beee;
+}
+
+/*--- || ---*/
+
+#radio5:checked ~ .navegacao-auto .auto-btn5,
+#radio6:checked ~ .navegacao-auto .auto-btn6,
+#radio7:checked ~ .navegacao-auto .auto-btn7,
+#radio8:checked ~ .navegacao-auto .auto-btn8 {
+    background: #94beee;
+}
+
+/* responsivo */
+/* 📱 Mobile (até 768px) */
+@media (max-width: 768px) {
+    .titulo-produtos {
+        font-size: 24px; /* Ajuste do tamanho da fonte para títulos em telas menores */
+    }
+
+    .container-software {
+        display: block; /* Os softwares vão ficar em uma única linha */
+        margin-bottom: 40px; /* Espaçamento ajustado entre os itens */
+    }
+
+    .software-esquerda, .software-direita {
+        margin: 0; /* Remove margens laterais */
+    }
+
+    .descricao-software {
+        font-size: 14px; /* Reduz o tamanho da fonte da descrição */
+        padding: 15px; /* Ajusta o padding */
+    }
+
+    .slider {
+        max-width: 100%; /* O carrossel ocupa toda a largura da tela */
+    }
+
+    .navegacao-manual {
+        bottom: 5px; /* Ajusta a posição das bolinhas */
+    }
+
+    .navegacao-auto {
+        margin-top: 250px; /* Ajusta o posicionamento dos botões de navegação */
+    }
+}
+
+/* 📟 Tablet (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .titulo-produtos {
+        font-size: 28px; /* Tamanho da fonte para títulos em tablets */
+    }
+
+    .container-software {
+        display: block; /* Alinha os itens em uma única linha (sem flex) */
+        margin-bottom: 50px; /* Espaçamento ajustado entre os itens */
+    }
+
+    .software-esquerda, .software-direita {
+        margin: 0; /* Remove margens laterais */
+    }
+
+    .descricao-software {
+        font-size: 16px; /* Aumenta o tamanho da fonte da descrição */
+        padding: 20px; /* Ajuste no padding */
+    }
+
+    .slider {
+        max-width: 100%; /* O carrossel ocupa toda a largura da tela */
+    }
+
+    .navegacao-manual {
+        bottom: 15px; /* Ajusta as bolinhas de navegação */
+    }
+
+    .navegacao-auto {
+        margin-top: 300px; /* Ajusta o posicionamento dos botões de navegação */
+    }
+}

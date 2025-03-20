@@ -1,0 +1,168 @@
+/* Estilo do rodapé */
+.rodape {
+    background-color: var(--Cor-Terciaria); /* Cor de fundo */
+    color: var(--Cor-Branca); /* Cor do texto */
+    padding: 40px 20px 20px 20px; /* Espaçamento interno */
+}
+
+.container-rodape {
+    max-width: 1200px; /* Largura máxima do contêiner */
+    margin: 0 auto; /* Centraliza o contêiner */
+    display: flex;
+    flex-wrap: wrap; /* Permite que as colunas quebrem para a próxima linha */
+    gap: 40px; /* Espaçamento entre as colunas */
+}
+
+.logo-rodape img {
+    width: 110px; /* Largura da logo */
+    height: auto; /* Mantém a proporção */
+    margin: 100px 130px 0 -100px; /* Espaçamento da logo */
+    display: inline-block;
+}
+
+.paragrafo_logo_rodape {
+    display: inline-block;
+    position: absolute;
+    margin: 153px 0 0 -140px;
+    font-size: var(--Tamanho-Fonte-Terciaria);
+}
+
+.conteudo-rodape {
+    display: flex;
+    flex-wrap: wrap; /* Permite que as colunas quebram para a próxima linha */
+    gap: 40px; /* Espaçamento entre as colunas */
+    flex: 1; /* Ocupa o espaço disponível */
+}
+
+.coluna-rodape {
+    flex: 1; /* Cada coluna ocupa espaço igual */
+    min-width: 200px; /* Largura mínima para evitar quebras indesejadas */
+}
+
+.titulo-coluna {
+    font-family: var(--Fonte-Logo);
+    font-size: 18px; /* Tamanho da fonte */
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+}
+
+.lista-rodape {
+    list-style: none; /* Remove as bolinhas da lista */
+    padding: 0; /* Remove o padding padrão */
+}
+
+.lista-rodape li {
+    margin-bottom: 10px; /* Espaçamento entre os itens da lista */
+}
+
+.lista-rodape a {
+    color: var(--Cor-Branca); /* Cor do texto */
+    text-decoration: none; /* Remove o sublinhado */
+    transition: color 0.3s ease; /* Transição suave */
+}
+
+.lista-rodape a:hover {
+    color: var(--Cor-Secundaria); /* Cor ao passar o mouse */
+}
+
+/* Rodapé inferior */
+.rodape-inferior {
+    background-color: var(--Cor-Quaternaria); /* Cor de fundo */
+    padding: 20px 0; /* Espaçamento interno */
+    margin-top: 40px; /* Espaçamento acima do rodapé inferior */
+}
+
+.container-rodape-inferior {
+    max-width: 1200px; /* Largura máxima do contêiner */
+    margin: 0 auto; /* Centraliza o contêiner */
+    text-align: center; /* Centraliza o texto */
+}
+
+.texto-rodape-inferior {
+    font-family: var(--Fonte-Logo);
+    font-size: 14px; /* Tamanho da fonte */
+    color: var(--Cor-Branca); /* Cor do texto */
+    margin: 5px 0; /* Espaçamento entre os parágrafos */
+}
+
+.texto-rodape-inferior a {
+    color: var(--Cor-Branca); /* Cor do texto */
+    text-decoration: none; /* Remove o sublinhado */
+    transition: color 0.3s ease; /* Transição suave */
+}
+
+.texto-rodape-inferior a:hover {
+    color: var(--Cor-Secundaria); /* Cor ao passar o mouse */
+}
+
+
+/* responsivo */
+
+/* 📱 Mobile (até 768px) */
+@media (max-width: 768px) {
+    /* Alinha logo e texto do rodapé na parte superior */
+    .container-rodape {
+        flex-direction: column; /* Alinha logo e texto em coluna */
+        text-align: center; /* Centraliza o conteúdo */
+    }
+
+    .logo-rodape img {
+        margin: 0 60px 0 0; /* Centraliza a logo no mobile */
+        width: 80px; /* Reduz a largura da logo */
+    }
+
+    .paragrafo_logo_rodape {
+        margin: 32px 0 0 -64px; /* Ajusta o espaçamento do parágrafo */
+        font-size: var(--Tamanho-Fonte-Terciaria); /* Reduz o tamanho da fonte */
+    }
+
+    /* Alinha as colunas de conteúdo na parte inferior */
+    .conteudo-rodape {
+        margin-top: 20px; /* Espaçamento entre a logo e o conteúdo */
+        justify-content: center; /* Centraliza as colunas */
+        text-align: center; /* Centraliza o conteúdo das colunas */
+    }
+
+    .coluna-rodape {
+        min-width: 100%; /* Ocupa toda a largura no mobile */
+        text-align: center; /* Centraliza o texto nas colunas */
+    }
+
+    .rodape-inferior {
+        margin-top: 20px; /* Ajusta o espaçamento para o rodapé inferior */
+    }
+}
+
+/* 📟 Tablet (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* Alinha logo e texto do rodapé na parte superior */
+    .container-rodape {
+        flex-direction: column; /* Alinha logo e texto em coluna */
+        text-align: center; /* Centraliza o conteúdo */
+    }
+
+    .logo-rodape img {
+        margin: 0 60px 0 0; /* Centraliza a logo no mobile */
+        width: 80px; /* Reduz a largura da logo */
+    }
+
+    .paragrafo_logo_rodape {
+        margin: 32px 0 0 -64px; /* Ajusta o espaçamento do parágrafo */
+        font-size: var(--Tamanho-Fonte-Terciaria); /* Reduz o tamanho da fonte */
+    }
+
+    /* Alinha as colunas de conteúdo na parte inferior */
+    .conteudo-rodape {
+        margin-top: 20px; /* Espaçamento entre a logo e o conteúdo */
+        justify-content: center; /* Centraliza as colunas */
+        text-align: center; /* Centraliza o conteúdo das colunas */
+    }
+
+    .coluna-rodape {
+        min-width: 100%; /* Ocupa toda a largura no tablet */
+        text-align: center; /* Centraliza o texto nas colunas */
+    }
+
+    .rodape-inferior {
+        margin-top: 20px; /* Ajusta o espaçamento para o rodapé inferior */
+    }
+}

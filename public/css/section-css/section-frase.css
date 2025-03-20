@@ -1,0 +1,115 @@
+/* Estilo da frase chamativa */
+.frase_chamativa{
+    margin-top: 5%;
+    text-align: center; /* Centraliza o texto */
+    color: var(--Cor-Branca); /* Cor do texto */
+    font-family: Arial, Helvetica, sans-serif; /* Fonte do texto */
+    font-size: 45px;
+}
+
+.frase_chamativa_segunda{
+    margin-top: 2%;
+    text-align: center; /* Centraliza o texto */
+    color: var(--Cor-Branca); /* Cor do texto */
+    font-family: var(--Fonte-Logo); /* Fonte do texto */
+    font-size: var(--Tamanho-Fonte-Secundaria);
+    font-weight: normal;
+        .span_spextech{
+        font-weight: bold;
+        }
+}
+
+/* Estilo do contêiner do botão */
+.container-botao {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    margin-top: 20px; /* Espaçamento acima do botão */
+}
+
+/* Estilo do botão "Fale Conosco" */
+.botao-whatsapp {
+    display: inline-block; /* Faz o botão ocupar apenas o espaço necessário */
+    background-color: #25D366; /* Cor verde do WhatsApp */
+    color: white; /* Cor do texto */
+    font-size: 20px; /* Tamanho da fonte */
+    font-family: Arial, sans-serif; /* Fonte do texto */
+    padding: 15px 30px; /* Espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    text-decoration: none; /* Remove o sublinhado do link */
+    margin-top: 20px; /* Espaçamento acima do botão */
+    transition: background-color 0.3s ease; /* Transição suave */
+    text-align: center; /* Centraliza o texto */
+    
+}
+
+/* Efeito ao passar o mouse */
+.botao-whatsapp:hover {
+    background-color: #128C7E; /* Cor mais escura ao passar o mouse */
+}
+
+/* Estilo do ícone do WhatsApp */
+.botao-whatsapp i {
+    margin-right: 10px; /* Espaçamento entre o ícone e o texto */
+}
+
+/* Estilo do contêiner da imagem */
+.container-imagem {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    margin-top: 40px; /* Espaçamento acima da imagem */
+}
+
+/* Estilo da imagem */
+.imagem-centralizada {
+    max-width: 80%; /* A imagem ocupará no máximo 80% da largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 10px; /* Bordas arredondadas (opcional) */
+    
+}
+
+/* responsivo */
+
+/* 📱 Mobile (até 768px) */
+@media (max-width: 768px) {
+    .frase_chamativa {
+        font-size: clamp(1.5rem, 5vw, 2.2rem); /* Ajuste dinâmico conforme a tela */
+        margin-top: 8vh;
+        padding: 0 5vw; /* Espaçamento lateral proporcional */
+    }
+
+    .frase_chamativa_segunda {
+        font-size: clamp(1rem, 4vw, 1.5rem);
+        padding: 0 5vw;
+    }
+
+    .container-imagem {
+        margin: 5vh;
+        width:80%;
+    }
+
+    .imagem-centralizada {
+        max-width: 95%; /* A imagem se adapta melhor */
+    }
+}
+
+/* 📟 Tablet (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .frase_chamativa {
+        font-size: clamp(2rem, 4vw, 3rem);
+        margin-top: 7vh;
+    }
+
+    .frase_chamativa_segunda {
+        font-size: clamp(1.2rem, 3.5vw, 1.8rem);
+    }
+
+    .container-imagem {
+        margin-top: 6vh;
+    }
+
+    .imagem-centralizada {
+        max-width: 85%;
+    }
+}

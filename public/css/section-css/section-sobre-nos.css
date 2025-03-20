@@ -1,0 +1,125 @@
+
+/* Estilo da seção Sobre Nós */
+.secao-sobre {
+    padding: 80px 20px; /* Espaçamento interno */
+    background-color: var(--Cor-Branca); /* Cor de fundo */
+    text-align: center; /* Centraliza o conteúdo */
+}
+
+.container-sobre {
+    max-width: 1200px; /* Largura máxima do contêiner */
+    margin: 0 auto; /* Centraliza o contêiner na página */
+}
+
+.titulo-sobre {
+    font-family: var(--Fonte-Logo);
+    font-size: 36px; /* Tamanho da fonte */
+    color: var(--Cor-Branca); /* Cor do texto */
+    margin-bottom: 40px; /* Espaçamento abaixo do título */
+}
+
+.conteudo-sobre {
+    display: flex;
+    align-items: center; /* Alinha os itens verticalmente */
+    gap: 40px; /* Espaçamento entre texto e imagem */
+}
+
+.texto-sobre {
+    flex: 1; /* Ocupa o espaço disponível */
+    text-align: left; /* Alinha o texto à esquerda */
+    font-family: var(--Fonte-Logo);
+    font-size: var(--Tamanho-Fonte-Quaternaria); /* Tamanho da fonte */
+    color: var(--Cor-Branca); /* Cor do texto */
+    line-height: 1.8; /* Espaçamento entre linhas */
+}
+
+.texto-sobre strong {
+    color: var(--Cor-Secundaria); /* Destaque para palavras-chave */
+}
+
+.imagem-sobre {
+    flex: 1; /* Ocupa o espaço disponível */
+    max-width: 500px; /* Largura máxima da imagem */
+}
+
+.imagem-sobre img {
+    width: 140%; /* Faz a imagem ocupar 100% do contêiner */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+/* Animação da seção Sobre Nós */
+.secao-sobre {
+    opacity: 0; /* Inicia com opacidade 0 */
+    transform: translateY(50px); /* Inicia 50px abaixo */
+    transition: opacity 0.6s ease, transform 0.6s ease; /* Transição suave */
+}
+
+.secao-sobre.animate {
+    opacity: 1; /* Opacidade 1 ao animar */
+    transform: translateY(0); /* Animação para a posição inicial */
+}
+
+/* Estilo da seção Sobre Nós */
+.secao-sobre {
+    padding: 80px 20px;
+    background-image: url('../../assets/imagens/background-meio-1.png'); /* Caminho da imagem */
+    background-size: cover; /* Faz a imagem cobrir toda a tela */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+    background-attachment: fixed; /* Mantém a imagem fixa ao rolar a página */
+    color: var(--Cor-Branca); /* Cor do texto */
+    position: relative; /* Posição relativa */
+    z-index: 1; /* Z-index acima do conteúdo */
+}
+
+/* responsivo */
+
+/* 📱 Mobile (até 768px) e 📟 Tablet (768px - 1024px) */
+@media (max-width: 1024px) {
+    .conteudo-sobre {
+        display: flex;
+        flex-direction: column; /* Empilha os elementos em coluna */
+        align-items: center;
+        text-align: center;
+    }
+
+    .titulo-sobre {
+        order: 1; /* Primeiro */
+        font-size: clamp(1.8rem, 5vw, 2.5rem);
+    }
+
+    .texto-sobre {
+        order: 2; /* Segundo */
+        font-size: clamp(1rem, 4vw, 1.5rem);
+        text-align: center;
+        max-width: 90%;
+    }
+
+    .imagem-sobre {
+        order: 3; /* Terceiro */
+    }
+
+    .imagem-sobre img {
+        max-width: 300px;
+    }
+}
+
+/* 🖥️ Monitores grandes (1025px +) - Mantém o layout original */
+@media (min-width: 1025px) {
+    .conteudo-sobre {
+        flex-direction: row;
+    }
+
+    .titulo-sobre {
+        font-size: 36px;
+    }
+
+    .texto-sobre {
+        text-align: left;
+        max-width: 600px;
+    }
+
+    .imagem-sobre img {
+        max-width: 400px;
+    }
+}

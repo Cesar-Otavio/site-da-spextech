@@ -1,0 +1,40 @@
+/* Estilo do ícone do WhatsApp */
+.whatsapp-float {
+    position: fixed; /* Fixa o ícone na tela */
+    bottom: 20px; /* Distância do fundo da tela */
+    right: 20px; /* Distância da direita da tela */
+    background-color: #25D366; /* Cor de fundo do WhatsApp */
+    color: white; /* Cor do ícone */
+    width: 60px; /* Largura do ícone */
+    height: 60px; /* Altura do ícone */
+    border-radius: 50%; /* Formato circular */
+    text-align: center; /* Centraliza o ícone */
+    font-size: 30px; /* Tamanho do ícone */
+    line-height: 60px; /* Alinha o ícone verticalmente */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transição suave */
+    z-index: 1000; /* Garante que o ícone fique acima de outros elementos */
+}
+
+/* Efeito ao passar o mouse */
+.whatsapp-float:hover {
+    background-color: #128C7E; /* Cor mais escura ao passar o mouse */
+    transform: scale(1.1); /* Aumenta ligeiramente o tamanho */
+}
+
+/* Efeito de animação ao carregar a página */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+.whatsapp-float {
+    animation: bounce 2s ease-in-out; /* Aplica a animação */
+}
